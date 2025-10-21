@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sugestões de Presente - Pedro Henrique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #79c9e0; /* Cor de fundo Azul */
+            text-align: center;
+        }
+
+        .presentes-container {
+            width: 100%;
+            max-width: 450px; 
+            margin: 0 auto; 
+            position: relative; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        }
+
+        /* Estilo da Imagem (Pedro Henrique presentes.png) */
+        .imagem-presentes {
+            display: block;
+            width: 100%; 
+            height: auto;
+        }
+
+        /* BOTÃO DE VOLTAR DISCRETO */
+        .botao-voltar {
+            position: absolute;
+            top: 15px; 
+            left: 15px; 
+            z-index: 20; 
+            font-size: 2.2em;
+            text-decoration: none;
+            color: #fff; 
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); 
+            transition: transform 0.2s;
+        }
+        
+        .botao-voltar:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos para a seção dos blocos de presentes (Posicionamento Absoluto) */
+        .botoes-presentes {
+            position: absolute;
+            top: 38%; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            
+            width: 80%; 
+            max-width: 300px; 
+            
+            display: flex;
+            flex-direction: column; 
+            gap: 10px; 
+            align-items: center;
+            z-index: 10;
+        }
+
+        /* Estilos dos blocos de Sugestão (NÃO CLICÁVEIS) */
+        .bloco-sugestao {
+            display: flex; 
+            align-items: center; 
+            width: 100%;
+            padding: 8px 12px; 
+            
+            /* Melhoria 1: Cor com leve transparência (RGBA) */
+            background-color: rgba(226, 27, 53, 0.85); /* Vermelho E21B35 com 85% de opacidade */
+            
+            color: #fff; 
+            
+            /* Melhoria 2: Bordas mais arredondadas (Pill Shape) */
+            border-radius: 25px; 
+            
+            /* Melhoria 3: Borda Branca Sutil */
+            border: 2px solid rgba(255, 255, 255, 0.5); /* Borda branca semi-transparente */
+            
+            font-size: 0.95em; 
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra mais destacada para flutuar */
+            text-align: left; 
+            min-height: 50px; 
+            cursor: default; 
+            backdrop-filter: blur(2px); /* Efeito opcional de desfoque sutil por trás do botão */
+        }
+
+        /* Ícone: Espaço para o emoji */
+        .icone-sugestao-wrapper {
+            width: 45px; 
+            height: 45px; 
+            margin-right: 12px; 
+            flex-shrink: 0; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; 
+        }
+        
+        /* Estilo para o emoji */
+        .icone-sugestao-wrapper span {
+            font-size: 35px; 
+            line-height: 1; 
+            /* Sombra suave para ajudar a separar o emoji do fundo vermelho */
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5)); 
+        }
+        
+        /* Estilos para o texto no botão */
+        .texto-sugestao {
+            flex-grow: 1; 
+            text-transform: uppercase;
+            text-align: center; 
+        }
+        
+        .texto-sugestao span {
+            display: block; 
+        }
+
+        /* Media Query para responsividade */
+        @media (max-width: 380px) {
+             .bloco-sugestao {
+                font-size: 0.85em;
+                padding: 6px 10px;
+                min-height: 45px;
+             }
+             .icone-sugestao-wrapper {
+                width: 35px;
+                height: 35px;
+                margin-right: 8px;
+             }
+             .icone-sugestao-wrapper span {
+                font-size: 28px;
+             }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="presentes-container">
+        <a href="index.html" class="botao-voltar" title="Voltar ao Convite">
+            &#x2190;
+        </a>
+        
+        <img src="Pedro Henrique presentes.png" alt="Sugestões de Presente" class="imagem-presentes">
+
+        <div class="botoes-presentes">
+            <div class="bloco-sugestao">
+                <div class="icone-sugestao-wrapper">
+                    <span role="img" aria-label="Camisa">👕</span> 
+                </div>
+                <span class="texto-sugestao">
+                    <span>VISTO</span>
+                    <span>TAMANHO 3</span>
+                </span>
+            </div>
+            
+            <div class="bloco-sugestao">
+                <div class="icone-sugestao-wrapper">
+                    <span role="img" aria-label="Sapato">👟</span>
+                </div>
+                <span class="texto-sugestao">
+                    <span>CALÇO</span>
+                    <span>TAMANHO 14/15</span>
+                </span>
+            </div>
+            
+            <div class="bloco-sugestao">
+                <div class="icone-sugestao-wrapper">
+                    <span role="img" aria-label="Ursinho de Pelúcia">🧸</span>
+                </div>
+                <span class="texto-sugestao">
+                    <span>MIMOS</span>
+                    <span>BRINQUEDOS OU HIGIÊNICOS</span>
+                </span >
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

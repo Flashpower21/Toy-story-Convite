@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Convite Interativo do Pedro Henrique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #79c9e0; /* Cor de fundo Azul */
+            text-align: center;
+        }
+
+        .convite-container {
+            width: 100%;
+            max-width: 450px; 
+            margin: 0 auto; 
+            position: relative; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        }
+
+        /* Container da Imagem */
+        .container-imagem {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Estilo da Imagem (Pedro Henrique.png) */
+        .imagem-convite {
+            display: block;
+            width: 100%; 
+            height: auto;
+        }
+
+        /* Estilos para a seção dos botões */
+        .botoes-interativos {
+            position: absolute;
+            top: 85%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 90%; 
+            max-width: 400px;
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-around; 
+            gap: 10px; 
+            z-index: 10; 
+        }
+
+        /* Estilos para os botões */
+        .botao {
+            display: block;
+            flex-grow: 1; 
+            padding: 10px 5px; 
+            background-color: #E21B35; /* Vermelho forte */
+            color: #fff; 
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 0.9em; 
+            font-weight: bold;
+            line-height: 1.2; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .botao:hover {
+            background-color: #C1182C; 
+            transform: scale(1.02); 
+        }
+
+        .icone {
+            display: block;
+            font-size: 1.5em; 
+            margin-bottom: 2px;
+        }
+        @media (max-width: 380px) {
+             .botao {
+                font-size: 0.8em;
+                padding: 8px 3px;
+             }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="convite-container">
+        <div class="container-imagem">
+            <img src="Pedro Henrique.png" alt="Convite de Aniversário Pedro Henrique" class="imagem-convite">
+        </div>
+
+        <div class="botoes-interativos">
+            <a href="SEU_LINK_MAPA" target="_blank" class="botao">
+                <span class="icone">📍</span>
+                LOCALIZAÇÃO<br>NO MAPA
+            </a>
+            
+            <a href="presentes.html" class="botao"> 
+                <span class="icone">🎁</span>
+                SUGESTÃO DE<br>PRESENTE
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
